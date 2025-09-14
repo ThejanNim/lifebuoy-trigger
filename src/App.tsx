@@ -152,82 +152,84 @@ function App() {
           Ship dimensions: {shipLength}m × {shipWidth}m (elliptical)
         </span>
 
-        <div style={{ marginBottom: "10px" }}>
-          <label
-            style={{
-              display: "inline-block",
-              width: "20px",
-              fontWeight: "bold",
-            }}
-          >
-            X:
-          </label>
-          <input
-            type="number"
-            step="0.1"
-            placeholder="0.0"
-            value={coordinates.x}
-            onChange={(e) => handleInputChange("x", e.target.value)}
-            style={{
-              width: "80px",
-              padding: "5px",
-              marginLeft: "5px",
-              border: "1px solid #ccc",
-              borderRadius: "4px",
-            }}
-          />
-        </div>
+        <div className="flex gap-2">
+          <div style={{ marginBottom: "10px" }}>
+            <label
+              style={{
+                display: "inline-block",
+                width: "20px",
+                fontWeight: "bold",
+              }}
+            >
+              X:
+            </label>
+            <input
+              type="number"
+              step="0.1"
+              placeholder="0.0"
+              value={coordinates.x}
+              onChange={(e) => handleInputChange("x", e.target.value)}
+              style={{
+                width: "80px",
+                padding: "5px",
+                marginLeft: "5px",
+                border: "1px solid #ccc",
+                borderRadius: "4px",
+              }}
+            />
+          </div>
 
-        <div style={{ marginBottom: "10px" }}>
-          <label
-            style={{
-              display: "inline-block",
-              width: "20px",
-              fontWeight: "bold",
-            }}
-          >
-            Y:
-          </label>
-          <input
-            type="number"
-            step="0.1"
-            placeholder="0.0"
-            value={coordinates.y}
-            onChange={(e) => handleInputChange("y", e.target.value)}
-            style={{
-              width: "80px",
-              padding: "5px",
-              marginLeft: "5px",
-              border: "1px solid #ccc",
-              borderRadius: "4px",
-            }}
-          />
-        </div>
+          <div style={{ marginBottom: "10px" }}>
+            <label
+              style={{
+                display: "inline-block",
+                width: "20px",
+                fontWeight: "bold",
+              }}
+            >
+              Y:
+            </label>
+            <input
+              type="number"
+              step="0.1"
+              placeholder="0.0"
+              value={coordinates.y}
+              onChange={(e) => handleInputChange("y", e.target.value)}
+              style={{
+                width: "80px",
+                padding: "5px",
+                marginLeft: "5px",
+                border: "1px solid #ccc",
+                borderRadius: "4px",
+              }}
+            />
+          </div>
 
-        <div style={{ marginBottom: "15px" }}>
-          <label
-            style={{
-              display: "inline-block",
-              width: "20px",
-              fontWeight: "bold",
-            }}
-          >
-            Z:
-          </label>
-          <input
-            type="number"
-            step="0.1"
-            placeholder="0.0"
-            value={coordinates.z}
-            onChange={(e) => handleInputChange("z", e.target.value)}
-            style={{
-              width: "80px",
-              padding: "5px",
-              marginLeft: "5px",
-              border: "1px solid #ccc",
-              borderRadius: "4px",
-            }}
-          />
+          <div style={{ marginBottom: "15px" }}>
+            <label
+              style={{
+                display: "inline-block",
+                width: "20px",
+                fontWeight: "bold",
+              }}
+            >
+              Z:
+            </label>
+            <input
+              type="number"
+              step="0.1"
+              placeholder="0.0"
+              value={coordinates.z}
+              onChange={(e) => handleInputChange("z", e.target.value)}
+              style={{
+                width: "80px",
+                padding: "5px",
+                marginLeft: "5px",
+                border: "1px solid #ccc",
+                borderRadius: "4px",
+              }}
+            />
+          </div>
         </div>
 
         <div style={{ display: "flex", gap: "10px" }}>

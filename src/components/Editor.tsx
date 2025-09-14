@@ -6,7 +6,7 @@ import { STLLoader } from "three/examples/jsm/loaders/STLLoader";
 import Loader from "./Loader";
 
 const files = ["Carnival_Spirit_1-300_scale"];
-const color = ["#ffffffff", "#ffffffff", "#ffffffff"];
+const color = ["#ffffffff"];
 const opacity = [1, 1, 1];
 
 interface Props {
